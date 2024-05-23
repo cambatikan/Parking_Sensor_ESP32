@@ -24,7 +24,7 @@ void setup() {
 
 void loop() {
   unsigned int distance = sonar.ping_cm();
-if(distance<=25){
+if(distance<=20){
    
   Serial.print("UZAKLIK= ");
   Serial.print(distance);
@@ -43,7 +43,7 @@ if(distance<=25){
   lcd.clear();
   
 }
-else if(26<distance && distance<50){
+else if(20<distance && distance<40){
   
   Serial.print("UZAKLIK= ");
   Serial.print(distance);
